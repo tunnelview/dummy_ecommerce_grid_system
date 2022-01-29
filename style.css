@@ -39,9 +39,11 @@
   grid-area: title;
 }
 .banner {
-  /* Commenting line 42 and 45 to implement line 44 to understand linear- gradient ( to right and to left) */
-  /* background: yellow; */
-  background: linear-gradient(to right, blue, yellow, cyan);
+  /* Commenting line 42 and 45 to implement line 44 to understand linear- gradient 
+  ( to right and to left) */
+  /* background: linear-gradient(to right, blue, yellow, cyan); left to right or 
+  right to left is only  for rectangular*/
+  background: radial-gradient(yellow, cyan, green);
   /* color: lightcoral; */
   grid-area: banner;
 }
