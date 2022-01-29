@@ -69,6 +69,8 @@
   background: rgb(138, 148, 147);
   color: cyan;
   grid-area: recent;
+  display: flex;
+  justify-content: center;
 }
 .main {
   background: blueviolet;
@@ -79,7 +81,7 @@
   flex-wrap: wrap;
 }
 
-main > div {
+.main > div {
   padding: 4rem;
   background: goldenrod;
   margin: 5px;
