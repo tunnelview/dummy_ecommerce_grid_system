@@ -1,0 +1,150 @@
+* {
+  font-size: 1.3rem;
+}
+.wrapper {
+  min-height: 80vh;
+
+  /* grid */
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  /* Commenting it out as auto is active, done this as 
+  one extra column is detected */
+  grid-template-areas:
+    "header header header"
+    "title title title"
+    "banner banner bb1"
+    "banner banner bb2"
+    "side-menu main main"
+    "tags main main"
+    "recent main main"
+    "footer footer footer";
+}
+
+.wrapper > * {
+  min-height: 50px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background: cornflowerblue;
+  color: white;
+  grid-area: header;
+}
+.title {
+  background: red;
+  color: fuchsia;
+  grid-area: title;
+}
+.banner {
+  background: yellow;
+  color: lightcoral;
+  grid-area: banner;
+}
+.bb1 {
+  background: violet;
+  color: deeppink;
+  grid-area: bb1;
+}
+.bb2 {
+  background: yellowgreen;
+  color: dodgerblue;
+  grid-area: bb2;
+}
+.side-menu {
+  background: turquoise;
+  color: darkorange;
+  grid-area: side-menu;
+}
+.tags {
+  background: wheat;
+  color: crimson;
+  grid-area: tags;
+}
+.recent {
+  background: rgb(138, 148, 147);
+  color: cyan;
+  grid-area: recent;
+}
+.main {
+  background: blueviolet;
+  color: aquamarine;
+  grid-area: main;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+main > div {
+  padding: 4rem;
+  background: goldenrod;
+  margin: 5px;
+  flex: 1;
+}
+
+.Product1 {
+  background: green;
+  color: brown;
+  grid-area: Product1;
+}
+.footer {
+  background: black;
+  color: white;
+  grid-area: footer;
+}
+
+/* ============media query============= */
+/* ===============ipad================= */
+@media (max-width: 768px) {
+  .wrapper {
+    min-height: 80vh;
+
+    /* grid */
+    display: grid;
+    gap: 10px;
+    /* grid-template-columns: auto; If this line is commented, there will be additional column*/
+    grid-template-columns: auto;
+    grid-template-areas:
+      "header header"
+      "title title"
+      "banner banner"
+      "banner banner"
+      "bb1 bb2"
+      "main main"
+      "main main"
+      "side-menu tags"
+      "recent recent"
+      "footer footer";
+  }
+}
+
+/* =================mobile==================== */
+
+@media (max-width: 480px) {
+  .wrapper {
+    min-height: 80vh;
+
+    /* grid */
+    display: grid;
+    gap: 10px;
+    /* grid-template-columns: auto; If this line is commented, there will be additional column*/
+    grid-template-columns: auto;
+    grid-template-areas:
+      "header"
+      "title"
+      "banner"
+      "bb1"
+      "bb2"
+      "side"
+      "-menu"
+      "tags"
+      "side"
+      "-menu"
+      "tags"
+      "recent"
+      "main"
+      "footer";
+  }
+}
