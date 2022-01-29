@@ -8,7 +8,7 @@
   display: grid;
   gap: 10px;
   /* grid-template-columns: repeat(3, 1fr); */
-  /* Commenting it out as auto is active, done this as 
+  /* Commenting out as auto is active, done this as 
   one extra column is detected */
   grid-template-areas:
     "header header header"
@@ -76,7 +76,7 @@
   background: blueviolet;
   color: aquamarine;
   grid-area: main;
-  /* display: flex; */
+  /* display: flex;  chaged the display to grid, can have either flex or grid, can't have both */
   /* justify-content: flex-start;
   flex-wrap: wrap; */
   display: grid;
