@@ -114,7 +114,7 @@
     /* grid */
     display: grid;
     gap: 10px;
-    /* grid-template-columns: auto; If this line is commented, there will be additional column*/
+    /* grid-template-columns: auto; If this line is commented, there will be an additional column*/
     /* grid-template-columns: auto; */
     grid-template-areas:
       "header header"
@@ -139,7 +139,7 @@
     /* grid */
     display: grid;
     gap: 10px;
-    /* grid-template-columns: auto; If this line is commented, there will be additional column*/
+    /* grid-template-columns: auto; if this line is commented, there will be additional column*/
     /* grid-template-columns: auto; */
     grid-template-areas:
       "header"
