@@ -76,9 +76,11 @@
   background: blueviolet;
   color: aquamarine;
   grid-area: main;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* justify-content: flex-start;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .main > div {
@@ -86,6 +88,8 @@
   background: goldenrod;
   margin: 5px;
   flex: 1;
+  /* max-width: 900px; */
+  /* grid-template-columns: 1fr 1fr 1fr;  */
 }
 
 .Product1 {
